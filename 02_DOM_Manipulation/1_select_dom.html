@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1 select dom</title>
+</head>
+<body>
+<h1>hello IJSE</h1>
+
+<h2>html module</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem commodi dolores doloribus earum eius enim eos et exercitationem, inventore iure nemo nostrum obcaecati officiis porro quae quam tempore. Doloremque?</p>
+<script>
+    document.getElementsByTagName("h2"); // select all h2
+    document.getElementsByTagName("h2")[0]; // select first h2
+    document.getElementsByTagName("h2")[1]; // select second h2
+    document.getElementsByTagName("h2")[1].innerText; // select second h2 and get text
+    document.getElementsByTagName("h2")[1].innerText = "changed"; // change text selected item ( no refresh change dynamically )
+    document.getElementsByTagName("input")[0].setAttribute("placeholder" , "this is placeholder"); // set Attribute
+    
+</script>
+
+<h2>JS module</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam animi blanditiis culpa dolorem eveniet explicabo facere, incidunt nam officiis perspiciatis suscipit! Beatae impedit ipsum necessitatibus nihil quo unde veritatis!</p>
+
+<h2>css module</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi assumenda dignissimos dolorem eaque eligendi id modi nam nesciunt nobis quasi quisquam reiciendis, tempore ullam veniam vero voluptatibus! Natus, reiciendis!</p>
+
+<ul>
+    <li>Java</li>
+    <li>Python</li>
+    <li>GoLang</li>
+    <li>C++</li>
+</ul>
+
+<input type="text"><br><br>
+<input type="password"><br><br>
+<button>click me</button>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<input type="text" id="url"><br><br>
+<button>click me</button><br><br>
+<img alt="this is image">
+
+<script>
+    document.querySelectorAll("button")[1].addEventListener("click",
+        function(){
+            document.querySelector("img").setAttribute("src",document.getElementById("url").value)
+        }
+    )
+</script>
+
+</body>
+</html>

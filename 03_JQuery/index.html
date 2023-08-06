@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1 id="first-H1">Hello jQuery</h1>
+<h2 id="Second" >Let's manipuate the DOM</h2>
+<h3>Let's manipuate the DOM</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorem quod
+    tenetur. Corporis ea eos nisi praesentium quisquam? Aliquam aliquid animi beatae
+    dolores, eius eum fugiat harum incidunt molestias nihil placeat qui quia quos,
+    similique, suscipit. Aliquid ex excepturi itaque nisi provident. Ad amet consectetur
+    deseridunt illo, laboriosam nam numquam.</p>
+<hr>
+<img src="" alt="" id="image">
+<hr>
+<ul id="list">
+    <li>java</li>
+    <li>HTML</li>
+    <li>css</li>
+    <li>js</li>
+    <li>Spring</li>
+</ul>
+<hr>
+<input id="txtContent" type="text">
+<button id="button">TEST</button>
+<button id="button1">SET TEST</button>
+<button id="button2">UP</button>
+<button id="button3">DOWN</button>
+<button id="button4">Image</button>
+<hr>
+
+<script src="assets/jQuery/jquery-3.6.4.min.js"></script>
+<script>
+    //$("h1").text("hello javascript")
+
+  /*  $("button").click(function (){
+        alert("hello ")
+    });*/
+
+    $("#button").click(function (){
+        $("#first-H1").css('color','red')
+    });
+
+    $("#button1").click(function (){
+        $("#Second").text($("#txtContent").val());
+    });
+
+    $("#button2").click(function (){
+        $("#list").prepend("<li>"+$('#txtContent').val()+"</li>" )
+
+    });
+    $("#button3").click(function (){
+        $("#list").append("<li>"+$('#txtContent').val()+"</li>")
+
+    });
+    $("#button4").click(function (){
+        $("#image").attr('src',$("#txtContent").val())
+
+    });
+
+</script>
+</body>
+</html>
