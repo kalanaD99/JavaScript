@@ -40,23 +40,29 @@
   /*  $("button").click(function (){
         alert("hello ")
     });*/
-
+        /*Change the colour after click the button*/
     $("#button").click(function (){
         $("#first-H1").css('color','red')
     });
 
+        /*change the context that enter on the textfeild*/
     $("#button1").click(function (){
         $("#Second").text($("#txtContent").val());
     });
 
+        /*add an item up to the list*/
     $("#button2").click(function (){
         $("#list").prepend("<li>"+$('#txtContent').val()+"</li>" )
 
     });
+
+    /*add an item down to the list*/
     $("#button3").click(function (){
         $("#list").append("<li>"+$('#txtContent').val()+"</li>")
 
     });
+
+    /*load a image when the address is paste in the text field*/
     $("#button4").click(function (){
         $("#image").attr('src',$("#txtContent").val())
 
