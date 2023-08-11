@@ -53,5 +53,11 @@ $("#btnCustomer").click(function (){
 
 /*---save button------*/
 $("#btnSave").click(function (){
+      let customerID = $("#txtCId").val();
+      let customerName = $("#txtCname").val();
+      let customerSalary =  $("#txtSalary").val();
+      let customerAddress =  $("#txtAddress").val();
 
+      let row = `<tr><td>${customerID}</td><td>${customerName}</td><td>${customerSalary}</td><td>${customerAddress}</td></tr>`
+ $("#tblCustomer").append(row);
 })
