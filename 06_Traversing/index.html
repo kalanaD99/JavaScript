@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<section id="section1">
+    <section id="subSec">
+        <div id="div1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consectetur cumque doloremque eum
+                mollitia necessitatibus quos reiciendis repellat saepe veniam?</p>
+            <ul>
+                <li>NSBM</li>
+                <li>SLIT</li>
+                <li>SLIATE</li>
+                <li>IIT</li>
+            </ul>
+        </div>
+        <div id="div2">
+            <ul>
+                <li>colombo</li>
+                <li>mountlavinia</li>
+                <li>dehiwala</li>
+                <li>Moratuwa</li>
+            </ul>
+        </div>
+    </section>
+</section>
+<script src="lib/jQuery/jquery-3.6.4.min.js"></script>
+<script>
+    $("#subSec").children("#div1").children("ul").children(":nth-child(2)").css("color","red");
+</script>
+</body>
+</html>

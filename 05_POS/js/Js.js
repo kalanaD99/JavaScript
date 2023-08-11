@@ -60,4 +60,8 @@ $("#btnSave").click(function (){
 
       let row = `<tr><td>${customerID}</td><td>${customerName}</td><td>${customerSalary}</td><td>${customerAddress}</td></tr>`
  $("#tblCustomer").append(row);
+
+      $("#tblCustomer>tr").click(function (){
+          console.log(this)
+      })
 })
