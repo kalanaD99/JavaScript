@@ -70,10 +70,10 @@ $("#btnSave").click(function (){
 /*----save button item section----*/
 $("#btnSaveItem").click(function (){
 
-    let itemID = $("#txtItemId");
-    let itemName = $("#txtItemName");
-    let QtyOnHand = $("#txtQtyOnHand");
-    let itemPrice = $("#txtPrice");
+    let itemID = $("#txtItemId").val();
+    let itemName = $("#txtItemName").val();
+    let QtyOnHand = $("#txtQtyOnHand").val();
+    let itemPrice = $("#txtPrice").val();
 
     let itemRow = `<tr><td>${itemID}</td><td>${itemName}</td><td>${QtyOnHand}</td><td>${itemPrice}</td></tr>`
     $("#tblItem").append(itemRow);
