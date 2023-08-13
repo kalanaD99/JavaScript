@@ -51,17 +51,30 @@ $("#btnCustomer").click(function (){
 
 /*-------------------------Customer section--------------------------*/
 
-/*---save button------*/
+/*---save button customer section------*/
 $("#btnSave").click(function (){
       let customerID = $("#txtCId").val();
       let customerName = $("#txtCname").val();
       let customerSalary =  $("#txtSalary").val();
       let customerAddress =  $("#txtAddress").val();
 
-      let row = `<tr><td>${customerID}</td><td>${customerName}</td><td>${customerSalary}</td><td>${customerAddress}</td></tr>`
- $("#tblCustomer").append(row);
+      let customerRow = `<tr><td>${customerID}</td><td>${customerName}</td><td>${customerSalary}</td><td>${customerAddress}</td></tr>`
+ $("#tblCustomer").append(customerRow);
 
       $("#tblCustomer>tr").click(function (){
           console.log(this)
       })
+})
+
+
+/*----save button item section----*/
+$("#btnSaveItem").click(function (){
+
+    let itemID = $("#txtItemId");
+    let itemName = $("#txtItemName");
+    let QtyOnHand = $("#txtQtyOnHand");
+    let itemPrice = $("#txtPrice");
+
+    let itemRow = `<tr><td>${itemID}</td><td>${itemName}</td><td>${QtyOnHand}</td><td>${itemPrice}</td></tr>`
+    $("#tblItem").append(itemRow);
 })

@@ -291,8 +291,8 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
-                                    <button  id="itemSaveButton" class="btn btn-primary" type="button">Save</button>
-                                </div>
+                                    <button  id="btnItemSave" class="btn btn-primary" type="button">Save</button>
+n                                </div>
                             </div>
                         </div>
                     </div>
@@ -303,34 +303,34 @@
             <div class=" row mt-4">
                 <div class=" col-5 col-lg col-md-5 col-sm-4">
                     <div class="mb-4">
-                        <label class="form-label" for="itemId">Item Code</label>
-                        <input class="form-control" disabled id="itemId" placeholder="I001" type="text">
+                        <label class="form-label" for="txtItemId">Item Code</label>
+                        <input itemid="" class="form-control"  id="txtItemId" placeholder="I001" type="text">
                     </div>
                 </div>
                 <div class="col-7 col-lg col-md-5 col-sm-4">
                     <div class="mb-4">
-                        <label class="form-label" for="itemName">Item Name</label>
-                        <input class="form-control" disabled id="itemName" placeholder="Item Name" type="text">
+                        <label class="form-label" for="txtItemName">Item Name</label>
+                        <input class="form-control" id="txtItemName" placeholder="Item Name" type="text">
                     </div>
                 </div>
                 <div class="col col-lg">
                     <div class="mb-2">
-                        <label class="form-label" for="qtyOnHand">Quantity</label>
-                        <input class="form-control" disabled id="qtyOnHand" placeholder="00" type="number">
+                        <label class="form-label" for="txtQtyOnHand">Quantity</label>
+                        <input class="form-control"  id="txtQtyOnHand" placeholder="00" type="number">
                     </div>
                 </div>
                 <!--UP-->
                 <div class="col col-lg">
                     <div class="mb-2">
-                        <label class="form-label" for="price">Unit Price</label>
-                        <input class="form-control" disabled id="price" placeholder="0000.00" type="text">
+                        <label class="form-label" for="txtPrice">Unit Price</label>
+                        <input class="form-control"id="txtPrice" placeholder="0000.00" type="text">
                     </div>
                 </div>
             </div>
             <div class=" gap-2 d-flex justify-content-center justify-content-md-end justify-content-sm-center  mt-4 mt-lg-2">
                 <button class="btn btn-secondary" type="button">Clear</button>
                 <button class="btn btn-danger" type="button">Delete</button>
-                <button class="btn btn-primary" type="button">Update</button>
+                <button id="btnSaveItem" class="btn btn-primary" type="button">Update and Save </button>
             </div>
 
         </div>
@@ -338,28 +338,17 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th scope="col">SR</th>
                     <th scope="col">Item code</th>
                     <th scope="col">Item name</th>
                     <th scope="col">Quantity</th>
                     <th scope="col">Unit Price(Rs)</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody id="tblItem">
                 <tr>
-                    <th scope="row">1</th>
-                    <td>I001</td>
-                    <td>Rice Samba</td>
-                    <td>100 Kg</td>
-                    <td>225.00</td>
+
                 </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>I002</td>
-                    <td>Dhal</td>
-                    <td>100 Kg</td>
-                    <td>340.00</td>
-                </tr>
+
                 </tbody>
             </table>
         </div>
