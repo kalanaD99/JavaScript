@@ -59,8 +59,9 @@ $("#btnSave").click(function (){
       let customerSalary =  $("#txtSalary").val();
       let customerAddress =  $("#txtAddress").val();
 
-      let customerRow = `<tr><td>${customerID}</td><td>${customerName}</td><td>${customerSalary}</td><td>${customerAddress}</td></tr>`
- $("#tblCustomer").append(customerRow);
+        let customerRow = `<tr><td>${customerID}</td><td>${customerName}</td><td>${customerSalary}</td><td>${customerAddress}</td></tr>`
+        $("#tblCustomer").append(customerRow);
+
 
       $("#tblCustomer>tr").click(function (){
           let id = $(this).children().eq(0).text();
