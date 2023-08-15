@@ -34,6 +34,22 @@
     /*----------Method Eq------------*/
     $("#section1").eq("0").css("color","red");
     $("div2").children(":eq(0)").css("color","blue");
+
+    /*----Convert dom element into jQuery object---- */
+    /*$('body').children().get(0); *//*-- to convert dom element into jQuery object, you must put this into jQuery selector*/
+
+    /*---Step Two----*/
+    $($('body').children().get(0));
+
+    /*--children vs parent methods*/
+    $("#div1").parent();/*---Element eke lngama parentwa select krla denawa----*/
+
+    /*----parens()-------*/
+    $("#div1").parents();/*--- Return all the parents in the body hirachy---*/
+
+    /*---Find()---*/
+    $(".body").find('p');/*-- we can find out something inside an element */
+
 </script>
 </body>
 </html>
