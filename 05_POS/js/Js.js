@@ -62,7 +62,10 @@ $("#btnSave").click(function (){
  $("#tblCustomer").append(customerRow);
 
       $("#tblCustomer>tr").click(function (){
-          console.log(this)
+          let id = $(this).children().eq(0).text();
+          let name = $(this).children().eq(1).text();
+          let salary = $(this).children().eq(2).text();
+          let address = $(this).children().eq(3).text();
       })
 })
 
