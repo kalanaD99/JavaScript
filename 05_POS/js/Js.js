@@ -53,6 +53,7 @@ $("#btnCustomer").click(function (){
 
 /*---save button customer section------*/
 $("#btnSave").click(function (){
+    /*---get values from textt fields------*/
       let customerID = $("#txtCId").val();
       let customerName = $("#txtCname").val();
       let customerSalary =  $("#txtSalary").val();
@@ -66,6 +67,12 @@ $("#btnSave").click(function (){
           let name = $(this).children().eq(1).text();
           let salary = $(this).children().eq(2).text();
           let address = $(this).children().eq(3).text();
+
+          /*---Set values to the text fields---*/
+            $("#txtCId").val(id);
+            $("#txtCname").val(name);
+            $("#txtSalary").val(salary);
+            $("#txtAddress").val(address);
       })
 })
 
