@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/04_SPA/04_SPA.iml" filepath="$PROJECT_DIR$/04_SPA/04_SPA.iml" />
       <module fileurl="file://$PROJECT_DIR$/05_POS/05_POS.iml" filepath="$PROJECT_DIR$/05_POS/05_POS.iml" />
       <module fileurl="file://$PROJECT_DIR$/06_Traversing/06_Traversing.iml" filepath="$PROJECT_DIR$/06_Traversing/06_Traversing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_Events/07_Events.iml" filepath="$PROJECT_DIR$/07_Events/07_Events.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/js.iml" filepath="$PROJECT_DIR$/.idea/js.iml" />
     </modules>
   </component>
