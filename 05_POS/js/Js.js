@@ -53,13 +53,19 @@ $("#btnCustomer").click(function (){
 
 /*---save button customer section------*/
 $("#btnSave").click(function (){
+
+    /*--remove all the lick events---*/
+    $("tblCustomer>tr").off("click");
+
     /*---get values from textt fields------*/
       let customerID = $("#txtCId").val();
       let customerName = $("#txtCname").val();
       let customerSalary =  $("#txtSalary").val();
       let customerAddress =  $("#txtAddress").val();
 
+        /*--create html row---*/
         let customerRow = `<tr><td>${customerID}</td><td>${customerName}</td><td>${customerSalary}</td><td>${customerAddress}</td></tr>`
+            /*--Apply data int table---*/
         $("#tblCustomer").append(customerRow);
 
 
@@ -75,6 +81,8 @@ $("#btnSave").click(function (){
             $("#txtSalary").val(salary);
             $("#txtAddress").val(address);
       })
+
+
 })
 
 

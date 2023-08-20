@@ -60,6 +60,17 @@ function printSomething(){
         alert("hello")
     });
 
+    /*--Formlized method standard way*/
+    $("#btnTest").click(function (){
+        alert("hello Js ")
+    });
+
+    /*-- Off Method---*/
+
+    $("#btnTest").off(); /*--- turn off all the evens ---*/
+    $("#btnTest").off("click");/*--turn off only the click events----*/
+
+
 </script>
 </body>
 </html>
