@@ -28,7 +28,7 @@
 <br>
 <hr>
 <input type="text"id="txtCusName">
-<button>Test</button>
+<button id="btnTest">Test</button>
 <br>
 <hr>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -44,9 +44,21 @@
 <script src="lib/jQuery/jquery-3.6.4.min.js"></script>
 <script>
 
+    /*--Global Events---*/
 function printSomething(){
     alert("hello js");
 }
+
+    /*--Speified Events----*/
+
+  /*  document.getElementById("btnTest").addEventListener("click",function (){
+        alert("hello")
+    });*/
+
+    /*---Standard way by using jQuery*/
+    $("#btnTest").on('click',function (){
+        alert("hello")
+    });
 
 </script>
 </body>
