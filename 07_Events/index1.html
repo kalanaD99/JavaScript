@@ -6,21 +6,32 @@
 </head>
 <body>
 <h1>Hello javascript......</h1>
-<input type="text" id="txtId" placeholder="customerId">
+<input type="text" id="txtId" placeholder="customer Id">
 <br>
-<input type="text" id="txtName" placeholder="customerName">
 <br>
-<input type="text" id="txtAddress" placeholder="customerAddress">
+<input type="text" id="txtName" placeholder="customer Name">
 <br>
-<input type="text" id="txtSalary" placeholder="cusomerSalary">
 <br>
-<button>save customer</button>
+<input type="text" id="txtAddress" placeholder="customer Address">
+<br>
+<br>
+<input type="text" id="txtSalary" placeholder="customer Salary">
+<br>
+<br>
+<button id="btnSave">save customer</button>
 
 
 <script src="lib/jQuery/jquery-3.6.4.min.js"></script>
 <script>
-    
-    
+   /* $("#btnSave").click(function (){
+        alert("hello js")
+    });*/
+
+    $("#btnSave").dblclick(function (){
+        alert("hello js")
+    });
+
+    $("#txtCusId").focus();
 </script>
 </body>
 </html>
