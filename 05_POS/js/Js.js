@@ -118,3 +118,20 @@ $("#txtSalary").keydown(function (event){
         $("#txtAddress").focus();
     }
 })
+
+/*----KeyDown item Section-------*/
+$("#txtItemId").keydown(function (event){
+    if(event.key == "Enter"){
+        $("#txtItemName").focus();
+    }
+})
+$("#txtItemName").keydown(function (event){
+    if(event.key == "Enter"){
+        $("#txtQtyOnHand").focus();
+    }
+})
+$("#txtQtyOnHand").keydown(function (event){
+    if(event.key == "Enter"){
+        $("#txtPrice").focus();
+    }
+})
