@@ -86,6 +86,7 @@ $("#btnSave").click(function (){
 })
 
 
+
 /*----save button item section----*/
 $("#btnSaveItem").click(function (){
 
@@ -96,4 +97,24 @@ $("#btnSaveItem").click(function (){
 
     let itemRow = `<tr><td>${itemID}</td><td>${itemName}</td><td>${QtyOnHand}</td><td>${itemPrice}</td></tr>`
     $("#tblItem").append(itemRow);
+})
+
+
+/*----KeyDown Customer Section-------*/
+$("#txtCId").keydown(function (event){
+    if(event.key == "Enter"){
+        $("#txtCname").focus();
+    }
+})
+
+$("#txtCname").keydown(function (event){
+    if(event.key == "Enter"){
+        $("#txtSalary").focus();
+    }
+})
+
+$("#txtSalary").keydown(function (event){
+    if(event.key == "Enter"){
+        $("#txtAddress").focus();
+    }
 })

@@ -24,9 +24,15 @@
 <script>
 
     /*---to get the pressed key letter---*/
+    // $("#txtId").keydown(function (event){
+    //     console.log(event.code);//keyA
+    //     console.log(event.key);// A
+    // })
+
     $("#txtId").keydown(function (event){
-        console.log(event.code);//keyA
-        console.log(event.key);// A
+        if(event.key == "Enter"){
+            $("#txtName").focus();
+        }
     })
 </script>
 </html>
