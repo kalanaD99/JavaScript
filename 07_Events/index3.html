@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse move</title>
+</head>
+<style>
+  div{
+    background: red;
+    width: 100px;
+    height: 100px;
+
+  }
+</style>
+<body>
+<h1>Hello JS..</h1>
+<div>
+
+
+  <script src="lib/jQuery/jquery-3.6.4.min.js"></script>
+  <script>
+
+      /*--when release the click then mouse up*/
+    $("div").mouseup(function (){
+        console.log("mouse up");
+    })
+    /*--when click the element then mouse down*/
+    $("div").mousedown(function (){
+        console.log("mouse down");
+    })
+  /*  /!*--when the curser mve on the element,then mouse move*!/
+    $("div").mousemove(function (){
+        console.log("mouse ,move");
+    })*/
+
+      $("body").mousemove(function(){
+          /*$("h1").move();*/
+          console.log("mouse move");
+      })
+  </script>
+</div>
+</body>
+</html>
