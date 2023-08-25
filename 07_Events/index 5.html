@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse move with text</title>
+</head>
+<body>
+
+<h1>Hello js</h1>
+
+
+
+
+
+<script src="lib/jQuery/jquery-3.6.4.min.js"></script>
+<script>
+    $("h1").css('position','relative');
+    $("h1").css("left","100px");
+    $("h1").css("top","100px");
+
+    /*-- to find the mouse pointer location--*/
+
+    $(window).on("mousemove",function (){
+      console.log("Working");
+    })
+
+</script>
+</body>
+</html>
