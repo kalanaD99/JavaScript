@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+</head>
+<body>
+
+<h1>Hello JS</h1>
+
+
+<script src="lib/jQuery/jquery-3.6.4.min.js"></script>
+<script>
+    //How to define a function
+    function saveCustomer(){
+        console.log("Save");
+    }
+    //Calling a function
+    saveCustomer();
+
+
+    /*---Hoisting--*/
+
+    //1. function hoisting
+
+    function addCustomer(){
+        console.log("Add customer")
+    }
+
+    addCustomer();
+
+    // function ek haduwain heduwain passe e line walata kalin ho passe e function ek call krnna puluwn
+
+    // 2. variable Hoisting
+
+    console.log(myname);
+
+    var myname;
+    /* variable ekk hadanna kalin call krla thibunama ud idan pahalata execute wewi eddi myname print krnna kiyla thibunama
+      uda idala execute una nisa myname variable ek yata thibunath aulak wenne nethuwa execute krnawa undefined kiyla...
+      uda ho pahala dekema declare krla nethi unoth error ekk enawa*/
+
+</script>
+</body>
+</html>
