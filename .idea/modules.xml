@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/05_POS/05_POS.iml" filepath="$PROJECT_DIR$/05_POS/05_POS.iml" />
       <module fileurl="file://$PROJECT_DIR$/06_Traversing/06_Traversing.iml" filepath="$PROJECT_DIR$/06_Traversing/06_Traversing.iml" />
       <module fileurl="file://$PROJECT_DIR$/07_Events/07_Events.iml" filepath="$PROJECT_DIR$/07_Events/07_Events.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_JS Timers.iml" filepath="$PROJECT_DIR$/08_JS Timers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_Js Timers/08_Js Timers.iml" filepath="$PROJECT_DIR$/08_Js Timers/08_Js Timers.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/js.iml" filepath="$PROJECT_DIR$/.idea/js.iml" />
     </modules>
   </component>
