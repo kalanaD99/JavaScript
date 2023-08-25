@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Mouse move with text</title>
 </head>
+<style>
+    body{
+        overflow-x: hidden;
+    }
+</style>
 <body>
 
 <h1>Hello js</h1>
@@ -14,14 +19,15 @@
 
 <script src="lib/jQuery/jquery-3.6.4.min.js"></script>
 <script>
-    $("h1").css('position','relative');
-    $("h1").css("left","100px");
-    $("h1").css("top","100px");
+
 
     /*-- to find the mouse pointer location--*/
 
-    $(window).on("mousemove",function (){
-      console.log("Working");
+    $(window).on("mousemove",function (event){
+      console.log(event.pageX,event.pageY);/*--to find the current location--*/
+        $("h1").css('position','relative');
+        $("h1").css("left",event.pageX);
+        $("h1").css("top",event.pageY);
     })
 
 </script>
