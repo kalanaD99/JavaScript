@@ -20,6 +20,19 @@
 <script src="lib/jQuery/jquery-3.6.4.min.js"></script>
 <script>
 
+    /*--Element eke tiyana text eke word eken word eka print krnna*/
+    let text = $('h1').text();
+    var position = 0;
+    function animateText(){
+        let output = text.substring(0,position);
+        console.log(output);
+        position++;
+
+        if(position==text.length){
+            position = 0;
+        }
+    }
+
 
     /*-- to find the mouse pointer location--*/
 
