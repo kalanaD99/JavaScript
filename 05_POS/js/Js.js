@@ -52,10 +52,11 @@ $("#btnCustomer").click(function (){
 /*-------------------------Customer section--------------------------*/
 
 /*---save button customer section------*/
+
 $("#btnSave").click(function (){
 
     /*--remove all the lick events---*/
-    $("tblCustomer>tr").off("click");
+    $("tblCustomer>tr").off();
 
     /*---get values from textt fields------*/
       let customerID = $("#txtCId").val();
@@ -81,6 +82,11 @@ $("#btnSave").click(function (){
             $("#txtSalary").val(salary);
             $("#txtAddress").val(address);
       })
+    /*---delete the row when doubleclick*/
+    $("#tblCustomer>tr").dblclick(function (){
+       $(this).remove();
+    })
+
 
 
 })
@@ -102,6 +108,11 @@ $("#txtCname").keydown(function (event){
 $("#txtSalary").keydown(function (event){
     if(event.key == "Enter"){
         $("#txtAddress").focus();
+    }
+})
+$("#txtAddress").keydown(function (event){
+    if(event.key == "Enter"){
+        $("#btnSave").click();
     }
 })
 
