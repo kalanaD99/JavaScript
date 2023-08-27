@@ -85,22 +85,8 @@ $("#btnSave").click(function (){
 
 })
 
-
-
-/*----save button item section----*/
-$("#btnSaveItem").click(function (){
-
-    let itemID = $("#txtItemId").val();
-    let itemName = $("#txtItemName").val();
-    let QtyOnHand = $("#txtQtyOnHand").val();
-    let itemPrice = $("#txtPrice").val();
-
-    let itemRow = `<tr><td>${itemID}</td><td>${itemName}</td><td>${QtyOnHand}</td><td>${itemPrice}</td></tr>`
-    $("#tblItem").append(itemRow);
-})
-
-
 /*----KeyDown Customer Section-------*/
+// text field ekaka data enter krla enter key eka press krama e data tika enter wela eilanga textfield ekata ynna
 $("#txtCId").keydown(function (event){
     if(event.key == "Enter"){
         $("#txtCname").focus();
@@ -118,6 +104,21 @@ $("#txtSalary").keydown(function (event){
         $("#txtAddress").focus();
     }
 })
+
+//======================================================================================================================
+/*-----------Item Section--------------*/
+/*----save button item section----*/
+$("#btnSaveItem").click(function (){
+
+    let itemID = $("#txtItemId").val();
+    let itemName = $("#txtItemName").val();
+    let QtyOnHand = $("#txtQtyOnHand").val();
+    let itemPrice = $("#txtPrice").val();
+
+    let itemRow = `<tr><td>${itemID}</td><td>${itemName}</td><td>${QtyOnHand}</td><td>${itemPrice}</td></tr>`
+    $("#tblItem").append(itemRow);
+})
+
 
 /*----KeyDown item Section-------*/
 $("#txtItemId").keydown(function (event){
