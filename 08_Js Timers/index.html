@@ -5,20 +5,49 @@
     <title>Js Timers</title>
 </head>
 <body>
+
 <h1>Hello JS</h1>
+<h2> 1 </h2>
+
+<button id="btnStart">start</button>
+<button id="btnStop">stop</button>
+
 <script src="lib/jQuery/jquery-3.6.4.min.js"></script>
 <script>
 
  /*--There are 2 types of Timing methods in JS
- *     1. setTimeout();
- *     2. setInterval();   */
 
+ *     1. setTimeout();
+ *          //setTimeout(callMe,1000);// delay method and run only one time
+ *     2. setInterval();   */
+            // setInterval(callMe,10);//Deela tyana ime ek complete wena hema warekama method ek call wenawa
     function callMe(){
         console.log("Function called...")
     }
 
-    // setInterval(callMe,10);//Deela tyana ime ek complete wena hema warekama method ek call wenawa
-    //setTimeout(callMe,1000);// delay method and run only one time
+ // when click the button numbers auto increment
+
+ let timeID;
+   $("#btnStart").click(function (){
+       timeID = setInterval(incrementNumber,1000);
+
+   })
+
+   let position = 0 ;
+
+    function incrementNumber(){
+        $('h2').text(position);
+        position++;
+
+    }
+    //to stop the timer
+
+ //setTimeout(create) ==> clearTimeout(stop)
+ //setInterval(create)==> clearInterval(stop)
+
+ $("#btnStop").click(function (){
+     clearInterval(timeID);
+ });
 
 </script>
 </body>
