@@ -33,9 +33,10 @@
 
    })
 
-   let position = 0 ;
+   let position = 1 ;
 
     function incrementNumber(){
+        clearInterval(timeID) // to off the previous timer
         $('h2').text(position);
         position++;
 
@@ -46,7 +47,7 @@
  //setInterval(create)==> clearInterval(stop)
 
  $("#btnStop").click(function (){
-     clearInterval(timeID);
+     clearInterval(timeID);// to stop the timer
  });
 
 </script>
