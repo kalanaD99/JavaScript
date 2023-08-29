@@ -127,13 +127,13 @@ $("#txtAddress").keydown(function (event){
         $("#btnSave").click();
     }
 })
-
-/*--To stop the task and execution of the key*/
-$("#txtCId,#txtSalary,#txtAddress").keydown(function (event){
+/*
+/!*--To stop the task and execution of the key*!/
+$("#txtCId,#txtSalary,#txtAddress").keydown(function (eventOb){
     if(eventOb.key == "K"){
         eventOb.preventDefault();//execute the task
     }
-})
+})*/
 
 /*--Regular Expressions---*/
 /*var regExCusID =/^(C)[0-9]{3}$/;
