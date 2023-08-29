@@ -93,9 +93,20 @@ $("#btnSave").click(function (){
 
 /*----KeyDown Customer Section-------*/
 // text field ekaka data enter krla enter key eka press krama e data tika enter wela eilanga textfield ekata ynna
-
+var regExCusID =/^(C)[0-9]{3}$/;
 $("#txtCId").keydown(function (event){
-    if(event.key == "Enter"){
+    let input = $("#txtCId").val();
+    $("#txtCId").keyup(function (){
+
+        if (regExCusID.test(input)){
+            $("#txtCId").css('border','none');
+            $("#txtCId").css('border','2px solid green');
+        }else{
+            $("#txtCId").css('border','none');
+            $("#txtCId").css('border','2px solid red');
+        }
+    })
+    if(input && event.key == "Enter") {
         $("#txtCname").focus();
     }
 })
@@ -118,7 +129,7 @@ $("#txtAddress").keydown(function (event){
 })
 
 /*--Regular Expressions---*/
-var regExCusID =/^(C)[0-9]{3}$/;
+/*var regExCusID =/^(C)[0-9]{3}$/;
 $("#txtCId").keyup(function (){
     let input = $("#txtCId").val();
     if (regExCusID.test(input)){
@@ -128,7 +139,7 @@ $("#txtCId").keyup(function (){
         $("#txtCId").css('border','none');
         $("#txtCId").css('border','2px solid red');
     }
-})
+})*/
 
 //======================================================================================================================
 /*-----------Item Section--------------*/
