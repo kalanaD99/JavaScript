@@ -64,10 +64,23 @@ $("#btnSave").click(function (){
       let customerSalary =  $("#txtSalary").val();
       let customerAddress =  $("#txtAddress").val();
 
-        /*--create html row (save button click krama table ekata data enter enter kranna)---*/
+      /*--Add values to the Database through object--*/
+
+    var customerObject = {
+        id:customerID,
+        name:customerName,
+        salary:customerSalary,
+        address:customerAddress
+    };
+
+    customerDB.push(customerObject);
+
+
+
+       /* /!*--create html row (save button click krama table ekata data enter enter kranna)---*!/
         let customerRow = `<tr><td>${customerID}</td><td>${customerName}</td><td>${customerSalary}</td><td>${customerAddress}</td></tr>`
-            /*--Apply data int table---*/
-        $("#tblCustomer").append(customerRow);
+            /!*--Apply data int table---*!/
+        $("#tblCustomer").append(customerRow);*/
 
         /*--table eke row ekk click krama eke data text field walata add wenna*/
       $("#tblCustomer>tr").click(function (){
