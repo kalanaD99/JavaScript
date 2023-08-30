@@ -75,8 +75,9 @@ $("#btnSave").click(function (){
 
     customerDB.push(customerObject);
     /*--After confirming the alert.. then the data added to the table --*/
-    if (window.confirm("Do you really want to add this Customer..?")){
+    if (window.confirm("ඔබට අවශ්‍යද ..?")){
         loadAllCustomers();
+        searchCustomer();
     }
 
 
@@ -213,8 +214,27 @@ function loadAllCustomers(){
 function loadAllCustomers(){
     $("#tblCustomer").empty();
     for (var i in customerDB){
-        let customerRow = `<tr><td>${customerDB[i].id}</td><td>${customerDB[i].name}</td><td>${customerDB[i].salary}</td>
-                    <td>${customerDB[i].address}</td></tr>`
+        let customerRow = `<tr><td>${customerDB[i].id}</td><td>${customerDB[i].name}</td><td>${customerDB[i].address}</td>
+                    <td>${customerDB[i].salary}</td></tr>`
         $("#tblCustomer").append(customerRow);
     }
+}
+function searchCustomer(){
+    $("#btnSearchCustomer").click(function (){
+        let input = $("#txtsearchCustomer").val();
+        for (var i in customerDB){
+            if ( customerDB[i].id,customerDB[i].name == input){
+                $("#txtCId").val(customerDB[i].id);
+                $("#txtCname").val(customerDB[i].name);
+                $("#txtSalary").val(customerDB[i].salary);
+                $("#txtAddress").val(customerDB[i].address);
+            }else{
+                //$("#lblSearch").css('color','red');
+
+                alert("Customer Not Found");
+
+            }
+        }
+
+    })
 }
