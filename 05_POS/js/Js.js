@@ -74,6 +74,11 @@ $("#btnSave").click(function (){
     };
 
     customerDB.push(customerObject);
+    /*--After confirming the alert.. then the data added to the table --*/
+    if (window.confirm("Do you really want to add this Customer..?")){
+        loadAllCustomers();
+    }
+
 
 
 
@@ -192,3 +197,24 @@ $("#txtQtyOnHand").keydown(function (event){
         $("#txtPrice").focus();
     }
 })
+
+/*--set data to the table using database--*/
+/*
+function loadAllCustomers(){
+    for (var i=0 ; i < customerDB.length ; i++){
+        if(customerDB[i].id == customerID){
+            let customerRow = `<tr><td>${customerDB[i].id}</td><td>${customerDB[i].name}</td><td>${customerDB[i].salary}</td>
+                    <td>${customerDB[i].address}</td></tr>`
+            $("#tblCustomer").append(customerRow);
+        }
+    }
+}*/
+
+function loadAllCustomers(){
+    $("#tblCustomer").empty();
+    for (var i in customerDB){
+        let customerRow = `<tr><td>${customerDB[i].id}</td><td>${customerDB[i].name}</td><td>${customerDB[i].salary}</td>
+                    <td>${customerDB[i].address}</td></tr>`
+        $("#tblCustomer").append(customerRow);
+    }
+}
