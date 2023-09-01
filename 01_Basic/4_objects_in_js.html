@@ -48,6 +48,47 @@
     Customers();// function
     var customerOb = new Customers(); // object
 
+
+    /*-- how to add methods inside the literal base object --*/
+    let Customer = {
+        id : "C001",// property (key , value)
+        name: "kalana",
+        address : "panadura",
+        salary : 25000
+        printMyName:function(){
+            console.log("Kalana");
+        }
+    }
+
+    /*-- Constructo base object --*/
+
+  /* Literal Base++++
+    var customer={
+        id:"C001",
+        name:"Kalana",
+        address:"Panadura",
+        salary:25000
+    }*/
+    /*--Constructor behaviour from functions--*/
+    /*function customerDto(id,name,address,salary){
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.salary = salary;
+    }
+var customer1 = new customerDto("C001","Kalana","Panadura",25000);
+    */
+
+    /*--OOP Encapsulation--*/
+
+    var custmer = {
+        id: "C001" // property
+    }
+
+    custmer.name= "kalana"; // to add a property
+    delete custmer.name; // to delete property
+    custmer.id = "C002"; // to change the value
+    object.keys(custmer); // to count the properties
 </script>
 </body>
 </html>
