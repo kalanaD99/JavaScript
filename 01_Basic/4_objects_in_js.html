@@ -113,7 +113,15 @@ var customer1 = new customerDto("C001","Kalana","Panadura",25000);
     }
 
   /*  object.getOwnPropertyDescriptor(objectName,property)*/
+
+    /*--How to view property Discriptors--*/
     object.getOwnPropertyDescriptor(item,'code');
+
+    /*-- HOW TO CHANGE THE DEFAULT VALUES --*/
+    object.defineProperty(customer,'id',{
+        writable:false
+    });
+
 
 </script>
 </body>
