@@ -58,7 +58,7 @@ $("#btnSave").click(function (){
     /*--remove all the lick events---*/
     $("tblCustomer>tr").off();
 
-    /*---get values from textt fields------*/
+    /*---get values from text fields------*/
       let customerID = $("#txtCId").val();
       let customerName = $("#txtCname").val();
       let customerSalary =  $("#txtSalary").val();

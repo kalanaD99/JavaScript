@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4db3157f-a393-4642-8884-1fce00f31ebb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_Basic/4_objects_in_js.html" beforeDir="false" afterPath="$PROJECT_DIR$/01_Basic/4_objects_in_js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_POS/js/Js.js" beforeDir="false" afterPath="$PROJECT_DIR$/05_POS/js/Js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Js Timers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/08_Js Timers/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Ajax/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/09_Ajax/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -44,7 +47,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/2nd Sem/AAD/Spring/POS_MVC_Spring&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/2nd Sem/Internet Technologies/Java Script/js/09_Ajax&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -55,11 +58,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\2nd Sem\Internet Technologies\Java Script\js\09_Ajax" />
       <recent name="D:\2nd Sem\Internet Technologies\Java Script\js\08_Js Timers" />
       <recent name="D:\2nd Sem\Internet Technologies\Java Script\js\01_Basic" />
       <recent name="D:\2nd Sem\Internet Technologies\Java Script\js\07_Events" />
       <recent name="D:\2nd Sem\Internet Technologies\Java Script\js\06_Traversing" />
-      <recent name="D:\2nd Sem\Internet Technologies\Java Script\js\05_POS" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\2nd Sem\Internet Technologies\Java Script\js\01_Basic" />
@@ -87,14 +90,14 @@
       <workItem from="1693563313319" duration="4341000" />
       <workItem from="1693938446559" duration="58000" />
       <workItem from="1694451451777" duration="1778000" />
-      <workItem from="1694704479540" duration="2254000" />
-    </task>
-    <task id="LOCAL-00013" summary="updated">
-      <created>1692381247391</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1692381247391</updated>
+      <workItem from="1694704479540" duration="3085000" />
+      <workItem from="1694834113417" duration="366000" />
+      <workItem from="1695018503875" duration="1592000" />
+      <workItem from="1697557882160" duration="4696000" />
+      <workItem from="1697574066528" duration="808000" />
+      <workItem from="1698516340877" duration="1798000" />
+      <workItem from="1698561276347" duration="636000" />
+      <workItem from="1701447333411" duration="904000" />
     </task>
     <task id="LOCAL-00014" summary="updated">
       <created>1692381379662</created>
@@ -432,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694626389576</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="updated">
+      <created>1694706988361</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1694706988361</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
